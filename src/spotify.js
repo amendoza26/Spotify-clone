@@ -15,7 +15,7 @@ const scopes = [
 
 export const getTokenFromUrl = () => {
     return window.location.hash
-        .substing(1)
+        .substring(1)
         .split('&')
         .reduce((initial, item) => {
             let parts = item.split('=');
